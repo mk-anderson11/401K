@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" type="text/css" href="401K_style.css">
+
+    <script>
+      var btn = document.getElementById("Calculate");
+      function calculate() {
+         var income = document.getElementById("Income").value;
+         document.getElementById("Output").innerHTML = "Annual Income = $" + income;
+      }
+    </script>
+    
+    <title>401K Calculator</title>
+  </head>
+
+  <body>
+    <h1>401K Calculator</h1>
+
+    <ul>
+      <li>Your Age: <input type="text" id="YourAge"></li>
+      <li>Retirement Age: <input type="text" id="RetirementAge"></li>
+      <li>Annual Income: $<input type="text" id="Income"></li>
+      <li>Expected Income Increase: <input type="text" id="Increase">% per year</li>
+      <li>Current 401K Balance: $<input type="text" id="Balance"></li>
+      <li>Contribution (% of Income): <input type="text" id="Contribution">% (including employer match)</li>
+      <li>Expected Annual Return: <input type="text" id="Return" value="6">%</li>
+    </ul>
+
+    <button id="Calculate" onclick="calculate()">Calculate</button>
+    <br>
+    <span id="Output"></span>
+    
+  </body>
+
+</html>
+								    
+			   
+    
